@@ -11,7 +11,12 @@ class PengaduanController extends BaseController
 {
     public function report()
     {
-        return view('halaman_utama');
+        $this->db = \Config\Database::connect();
+        $builder = $this->db->table('laporan')->select('*');
+        $query = $builder->orderBy('id', 'ASC')->get();
+        $data['dataLaporan'] = $query->getResult();
+
+        return view('halaman_utama',$data);
     }
 
     public function add_data()

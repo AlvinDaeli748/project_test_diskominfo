@@ -1,4 +1,3 @@
-
 <p>Layanan Pengaduan Masyarakat</p>
 
 <form action="tambah_laporan" method="post">
@@ -22,3 +21,23 @@
   <br><br>
   <input type="submit" value="Kirim">
 </form>
+
+<p>List Laporan</p>
+<table border=1>
+    <tr>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th>Tipe Laporan</th>
+        <th>Deskripsi</th>
+    </tr>
+    <?php foreach($dataLaporan as $r): ?>
+        <tr>
+            <td><?= esc($r->id) ?></td>
+            <td><?= esc($r->nama) ?></td>
+            <td><?= esc($r->alamat) ?></td>
+            <td><?= esc($r->tipe_laporan) ?></td>
+            <td><?= esc($r->deskripsi) ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
