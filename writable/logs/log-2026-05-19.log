@@ -1,0 +1,11 @@
+CRITICAL - 2026-05-19 04:28:35 --> ErrorException: Undefined property: App\Controllers\PengaduanController::$model
+[Method: POST, Route: tambah_laporan]
+in APPPATH\Controllers\PengaduanController.php on line 22.
+ 1 APPPATH\Controllers\PengaduanController.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PengaduanController::$model', 'C:\\xampp\\htdocs\\layanan_masyarakat\\app\\Controllers\\PengaduanController.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\PengaduanController->add_data()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PengaduanController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\layanan_masyarakat\\public\\index.php')

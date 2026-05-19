@@ -1,7 +1,7 @@
 
 <p>Layanan Pengaduan Masyarakat</p>
 
-<form action="">
+<form action="tambah_laporan" method="post">
   <label for="nama">Nama:</label><br>
   <input type="text" id="nama" name="nama"><br>
 
